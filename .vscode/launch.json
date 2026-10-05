@@ -1,0 +1,48 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "mutiagent: 运行 main（包方式，F5 默认）",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "mutiagent.main",
+      "cwd": "${workspaceFolder}",
+      "python": "E:\\agentpra\\pra\\venv\\Scripts\\python.exe",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "stopOnEntry": false,
+      "env": {
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    {
+      "name": "mutiagent: 调试当前打开的 Python 文件",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "${workspaceFolder}",
+      "python": "E:\\agentpra\\pra\\venv\\Scripts\\python.exe",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    {
+      "name": "mutiagent: 运行 main（可 step into langgraph 内部）",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "mutiagent.main",
+      "cwd": "${workspaceFolder}",
+      "python": "E:\\agentpra\\pra\\venv\\Scripts\\python.exe",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "env": {
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  ]
+}
